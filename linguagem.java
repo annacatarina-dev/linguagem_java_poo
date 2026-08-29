@@ -180,7 +180,7 @@ boolean moeda = random.nextBoolean();
 
 // =======================================================================================
 
-// --MÉTODOS E VETORES--
+// --MÉTODOS, VETORES E MATRIZES--
 
 /* os métodos servem p/ organizar e separa as funções do código
 * public --> é a visibilidade da classe
