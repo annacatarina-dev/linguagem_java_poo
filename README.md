@@ -1,4 +1,4 @@
---> Linguagem Java POO✨
+--> Linguagem Java OO✨
 
 ## Assuntos abordados📕:
 - operadores aritméticos;
