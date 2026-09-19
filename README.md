@@ -13,3 +13,4 @@
 - matrizes;
 - estrutura de repetição;
 - estrutura de condição;
+- métodos getters, setters e constructor;
