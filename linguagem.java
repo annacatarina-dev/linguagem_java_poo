@@ -180,7 +180,7 @@ boolean moeda = random.nextBoolean();
 
 // =======================================================================================
 
-// --MÉTODOS, VETORES E MATRIZES--
+// --MÉTODOS E VETORES--
 
 /* os métodos servem p/ organizar e separa as funções do código
 * public --> é a visibilidade da classe
@@ -189,6 +189,9 @@ boolean moeda = random.nextBoolean();
 * main --> é o nome do metodo
 * (notas1, notas2) -> são os parâmetros que vão ser utilizados nas linhas de codigo
  */
+
+// -> static quando num atributo de uma classe, se torna constante para TODOS os objetos!!
+
 
 /* Como fazer um vetor e uma matriz:
 * double [][] matriz = new double[3][2];
@@ -246,4 +249,86 @@ boolean moeda = random.nextBoolean();
 *    System.out.println("Contador: " + contador);
 *    contador++; // Incremento manual
 * }
+ */
+
+// --IF E ELSE--
+
+/* São estruturas de condição, ou seja, avalia uma condição que deve resultar estritamente em um valor booleano (true ou false). Se a condição for verdadeira, o bloco do if é executado; se for falsa, o programa pode executar o bloco do else ou seguir em frente.
+
+exemplos:
+if (condicao) {
+    // Código executado se a condição for TRUE
+} else {
+    // Código executado se a condição for FALSE
+}
+
+--> outras formas:
+1. Apenas o if (condicional simples)
+int idade = 20;
+if (idade >= 18) {
+    System.out.println("Você é maior de idade.");
+}
+
+2.If e else (condicional composta)
+int nota = 5;
+if (nota >= 7) {
+    System.out.println("Aprovado!");
+} else {
+    System.out.println("Reprovado!");
+}
+
+3.else if (mútlipas condições)
+int hora = 14;
+
+if (hora < 12) {
+    System.out.println("Bom dia!");
+} else if (hora < 18) {
+    System.out.println("Boa tarde!");
+} else {
+    System.out.println("Boa noite!");
+}
+
+Operador        Significado                Exemplo
+==           Igual a                    if (senha == 1234)
+!=           Diferente de               if (status != 0)
+> / <        Maior / Menor              if (idade > 18)
+>= / <=    Maior ou igual/Menor ou igual   if (nota >= 7.0)
+&&         (E, ambas devem ser true)    if (idade >= 18 && temCarteira)
+||         (OU, pelo menos uma é true)  if (dia == ""Sábado"" || dia == ""Domingo"")
+!          (NÃO ,inverte o valor)       if (!isCapotada)
+
+--> comparação de String: Nunca use "==" para comparar o texto de duas Strings em Java. Use o metodo ".equals()" !!
+
+String nome = "Maria";
+if (nome.equals("Maria")) {
+    System.out.println("Olá, Maria!");
+}
+ */
+// =======================================================================================
+
+// --MÉTODOS ESPECIAIS--
+
+/* --> Metodo Getters(acessores/pegar):Servem para consultar ou ler o valor de um atributo privado.Não recebem parâmetros e retornam o valor atual da variável.
+exemplo:
+public void getNome(){
+    ...
+}
+getNome();
+
+--> Metodo Setters(modificadores):Servem para alterar ou atribuir um novo valor a um atributo privado.Recebem o novo valor como parâmetro, atualizam o atributo interno e validam(se for necessário).
+exemplo:
+public void setNome(String nome){
+    ...
+}
+setNome("catarina");
+
+--> Metodo construtor: responsável por inicializar os objetos recém-criados.Quando você utiliza a palavra-chave new para instanciar uma classe, o construtor é executado automaticamente para definir os valores iniciais dos atributos e preparar o objeto para uso.
+exemplo:
+
+public Produto(String nome,String ID){
+    this.nome=nome;
+    this.ID = ID;
+    this.disponivel = 0;
+}
+Produto p1 = new Produto("lapis","4590-99");
  */
